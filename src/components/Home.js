@@ -22,12 +22,15 @@ export default function Home() {
   };
 
   return (
-    <Fragment>
-      <div style={{ margin: "10rem" }}>
+    <Fragment >
+      <div style={{ margin: "10rem" }} >
+      <h1>Employee Details</h1>
+      <br />
+      <br />
         <Table striped bordered hover size="sm">
-          <thead>
-            <tr>
-              <th>Name</th>
+          <thead >
+            <tr style={{backgroundColor: "grey"}}>
+              <th >Name</th>
               <th>Age</th>
               <th>Actions</th>
             </tr>
@@ -50,7 +53,7 @@ export default function Home() {
                           </Button>
                         </Link>
                         &nbsp; {/*  use for single space */}
-                        <Button onClick={() => handleDelete(item.id)}>
+                        <Button onClick={() => handleDelete(item.id)} style={{backgroundColor: "red"}}>
                           Delete
                         </Button>
                       </td>
@@ -62,7 +65,7 @@ export default function Home() {
         </Table>
         <br></br>
         <Link className="d-grid gap-2" to={"/create"}>
-          <Button size="lg">Create</Button>
+          <Button size="lg" style={{backgroundColor: "green"}}>Create</Button>
         </Link>
       </div>
     </Fragment>

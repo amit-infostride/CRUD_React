@@ -26,8 +26,10 @@ export default function Add() {
   };
 
   return (
-    <div>
-      <Form className="d-grid gap-2" style={{ margin: "15rem" }}>
+    
+    <div >
+      <h1 style={{ margin: "5rem" }}>Add New Employee</h1>
+      <Form className="d-grid gap-2" style={{ margin: "10rem" }}>
         <Form.Group className="mb-3" controlledId="formName">
           <Form.Control
             type="text"
